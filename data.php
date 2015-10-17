@@ -1,7 +1,7 @@
 <?php
 
-$apiKey = '0df1d4e16e8a702f9c4e8954fae00121';
-$gtin 	= $_POST['upc'];
+$apiKey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+$gtin 	= $_POST['data'];
 $ch 	= curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://api.outpan.com/v1/products/$gtin");
 curl_setopt($ch, CURLOPT_USERPWD, "$apiKey:");
